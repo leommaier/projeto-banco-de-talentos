@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Talentos</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="top-container">
+        <div id="img-container">
+
+        </div>               
+        <div id="form-container"> 
+            <div>
+                <p id="form-title">Seja bem vindo ao <span>Banco de Talentos</span>!</p>
+                <p id="form-subtitle">Efetue seu cadastro e faça parte do nosso time.</p>
+            </div>           
+            <div id="input-container">
+                <div class="form-input">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name" placeholder="ex: Fulano da Silva">
+                </div>
+                <div class="form-input">
+                    <label for="profession">Profissão:</label>
+                    <input type="text" name="profession" id="profession" placeholder="ex: Professor">
+                </div>
+                <div class="form-input">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="ex: fulano@email.com">
+                </div>
+                <button onclick="register()" id="register-button">Registrar</button>
+                <button onclick="remove()" id="remove-button">Remover</button>
+            </div>
+
+        </div>
+    </div>
+    <div id="players-container">
+        <p id="players-title">Para contratar um profissional, basta entrar em contato com os listados abaixo!</p>
+        <div id="players-receiver"></div>
+    </div>
+</body>
+</html>

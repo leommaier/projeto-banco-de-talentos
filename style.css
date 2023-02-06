@@ -1,0 +1,199 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;    
+}
+
+#top-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+    gap: 20px;    
+}
+
+#img-container {
+    background-image: url(profissoes.png);
+    width: 420px;
+    height: 420px;
+    background-size: cover;
+}
+
+#form-container {
+    background-color: #2973ee;
+    border-radius: 20px;
+    width: 380px;
+    height: 350px;
+    margin-right: 50px;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;    
+    gap: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+}
+
+#form-title {
+    color: white;
+    text-align: center;
+}
+
+span {
+    color: #d1e82a;
+    font-size: 20px;
+}
+
+#form-subtitle {
+    font-size: 15px;
+    color: white;
+}
+
+#input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.form-input {
+    width: 90%;
+    height: 35px;
+    background-color: white;
+    border-radius: 20px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #2974eec7;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.form-input:focus {
+    
+}
+
+#name, #profession, #email {
+    width: 80%;
+    height: 90%;
+    border-radius: 20px;
+    border: none;
+    padding-left: 10px;
+}
+
+#name:focus, #profession:focus, #email:focus {    
+    outline: 0;
+}
+
+#name::placeholder, #profession::placeholder, #email::placeholder {
+    color: rgb(214, 214, 214);
+    padding-left: 10px;
+}
+
+#register-button {
+    width: 170px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    background-color: #00c607;    
+    color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);    
+}
+
+#register-button:hover {
+    background-color: #00e607;
+    transition: .3s;
+}
+
+#remove-button {
+    width: 170px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    background-color: #c60000;
+    color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+#remove-button:hover {
+    background-color: #e60000;
+    transition: .3s;
+}    
+
+#players-container {
+    height: 50%;
+    width: 100%;
+    background-color: #2973ee;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: flex-start;        
+    gap: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    overflow-y: scroll;    
+}
+
+#players-title {
+    width: 100%;
+    height: 40px;
+    min-height: 40px;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+    background-color: #159c7b; 
+    color: white;      
+    border-radius: 5px;  
+    margin-top: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+#players-receiver {      
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px; 
+    padding: 25px;  
+}
+.new-div {
+    background-color: #d1e72a;
+    color: #2973ee;
+    width: 300px;
+    height: 110px;        
+    display: flex;    
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 1);
+    border-radius: 10px;    
+}
+
+@media (max-width: 880px) {
+    #img-container {
+        display: none;      
+    }
+    #form-container {
+        margin: 0px;
+        margin-top: 32px;
+        margin-bottom: 38px;
+    }
+}
+
